@@ -27,8 +27,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User getUser(int id) {
-        User user = em.find(User.class, id);
-        return user;
+        return em.find(User.class, id);
     }
 
     @Override
